@@ -1,11 +1,305 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="drawio-plugin" modified="2026-10-22T08:48:58.520Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="22.1.22" etag="FKv2_Rqv3uWsQ2y3jIJo" type="embed">
   <diagram name="2-context-map" id="2-context-map">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="293" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1639" pageHeight="969" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="titre" value="Comment les contextes collaborent-ils ?" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="1000" height="40" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titre" value="Comment les contextes collaborent-ils ?" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="40" y="20" width="1560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sous-titre" value="Context map v0 (phase 1) · sur chaque relation : U = amont (upstream), D = aval (downstream), et le pattern" style="text;html=1;whiteSpace=wrap;fontSize=12;align=left;verticalAlign=top;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="1400" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="filmodata" value="FilmoData&lt;br&gt;(API externe, en anglais)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="200" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="programmation" value="Programmation&lt;br&gt;«supporting» · CRUD" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="320" y="190" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tarification" value="Tarification&lt;br&gt;«supporting» · couches + paramétrage" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="780" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="partenaires" value="SortiesFlash, CinéMalin&lt;br&gt;(plateformes partenaires)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="270" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vente" value="Vente de places&lt;br&gt;«CORE DOMAIN»&lt;br&gt;DDD tactique + hexagonal&lt;br&gt;(agrégats Seance et Commande)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="720" y="430" width="380" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="payvia" value="PayVia&lt;br&gt;(paiement, «generic», acheté)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="470" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="abonnements" value="Abonnements&lt;br&gt;«supporting stratégique» · couches" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="1300" y="720" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="controle" value="Contrôle d&#39;accès&lt;br&gt;«supporting» · couches + hors ligne" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="780" y="760" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" value="Notification&lt;br&gt;«generic» · adapter fin" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="320" y="720" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="envoi" value="Service d&#39;envoi&lt;br&gt;(emails, SMS, acheté)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="730" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="declarations" value="Déclarations et reversements&lt;br&gt;«supporting» · couches / batch" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="320" y="450" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cnc" value="Portail du CNC&lt;br&gt;(format imposé)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;fontColor=#000000;spacing=4;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="460" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legende" value="Légende — Rouge : core domain · Bleu : supporting · Gris : generic · Pointillés : système externe (hors de notre contrôle)&lt;br&gt;Patterns — Customer/Supplier : l&#39;aval exprime ses besoins, l&#39;amont les livre · Published Language (PL) : l&#39;amont publie des événements dans un langage documenté, les avals s&#39;y abonnent · ACL : l&#39;aval traduit le modèle de l&#39;amont pour protéger le sien · Conformist : l&#39;aval adopte tel quel le modèle de l&#39;amont, qui ne négociera pas." style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;fontSize=11;fontStyle=0;align=left;verticalAlign=top;fontColor=#000000;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="30" y="880" width="1580" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="filmodata" target="programmation" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r1" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r1" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1-2" value="ACL" style="edgeLabel;html=1;fontSize=11;" parent="r1" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.15;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="programmation" target="vente" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r2" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r2" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2-2" value="Customer/Supplier&lt;br&gt;+ événements (PL)&lt;br&gt;SéancePubliée, SéanceAnnulée" style="edgeLabel;html=1;fontSize=11;" parent="r2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="tarification" target="vente" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r3" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r3" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3-2" value="Customer/Supplier&lt;br&gt;port GrilleTarifaire" style="edgeLabel;html=1;fontSize=11;" parent="r3" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.9;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="partenaires" target="vente" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r4" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r4" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4-2" value="ACL&lt;br&gt;AclSortiesFlash (B11)" style="edgeLabel;html=1;fontSize=11;" parent="r4" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.469;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="payvia" target="vente" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r5" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r5" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5-2" value="ACL&lt;br&gt;WebhookPayVia" style="edgeLabel;html=1;fontSize=11;" parent="r5" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="vente" target="abonnements" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r6" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r6" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6-2" value="Published Language&lt;br&gt;CommandePayée…" style="edgeLabel;html=1;fontSize=11;" parent="r6" vertex="1" connectable="0">
+          <mxGeometry x="-0.30000000000000004" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="abonnements" target="vente" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r7" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r7" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7-2" value="Customer/Supplier&lt;br&gt;droit à la place gratuite (B7, B8)" style="edgeLabel;html=1;fontSize=11;" parent="r7" vertex="1" connectable="0">
+          <mxGeometry x="-0.19999999999999996" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6333;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="payvia" target="abonnements" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r8" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r8" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8-2" value="ACL&lt;br&gt;prélèvements" style="edgeLabel;html=1;fontSize=11;" parent="r8" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="vente" target="controle" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r9" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r9" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9-2" value="Published Language&lt;br&gt;billets vendus" style="edgeLabel;html=1;fontSize=11;" parent="r9" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.9444;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="controle" target="abonnements" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r10" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r10" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10-2" value="Published Language&lt;br&gt;BilletScanné" style="edgeLabel;html=1;fontSize=11;" parent="r10" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0;exitY=0.85;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="vente" target="notification" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r11" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r11" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11-2" value="Published Language&lt;br&gt;CommandePayée" style="edgeLabel;html=1;fontSize=11;" parent="r11" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5556;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="envoi" target="notification" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r12-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r12" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r12" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12-2" value="ACL" style="edgeLabel;html=1;fontSize=11;" parent="r12" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r13" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=0;exitY=0.4;exitDx=0;exitDy=0;entryX=1;entryY=0.4889;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="vente" target="declarations" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r13" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r13-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r13" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r13-2" value="Published Language&lt;br&gt;ventes, montant payé" style="edgeLabel;html=1;fontSize=11;" parent="r13" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14" value="" style="html=1;rounded=0;endArrow=none;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5556;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="cnc" target="declarations" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r14-0" value="U" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r14" vertex="1" connectable="0">
+          <mxGeometry x="-0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14-1" value="D" style="edgeLabel;html=1;fontSize=12;fontStyle=1;fontColor=#B85450;" parent="r14" vertex="1" connectable="0">
+          <mxGeometry x="0.82" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14-2" value="Conformist" style="edgeLabel;html=1;fontSize=11;" parent="r14" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
