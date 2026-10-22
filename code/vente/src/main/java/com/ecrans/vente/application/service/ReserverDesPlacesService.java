@@ -54,6 +54,27 @@ public class ReserverDesPlacesService implements ReserverDesPlaces {
         // TODO étape 3
         // INDICE : même schéma qu'au TP3. Le prix de chaque billet vient de la grille (B6),
         // INDICE : et PayVia n'est appelé qu'une fois tout enregistré.
-        throw new UnsupportedOperationException("À compléter : étape 3");
+        LocalDateTime maintenant = LocalDateTime.now(horloge);
+        CommandeId id = CommandeId.nouvelle();
+
+        List<Billet> billets = demande.billets().stream()
+                .map(b -> new Billet(b.place(),
+                        new Tarif(b.categorie(), grille.prix(demande.seance(), b.categorie()))))
+                .toList();
+
+        Seance seance = seances.parId(demande.seance())
+                .orElseThrow(() -> new SeanceInconnue(demande.seance()));
+
+        Set<PlaceId> placesDemandees = billets.stream()
+                .map(Billet::place)
+                .collect(Collectors.toSet());
+        LocalDateTime jusqua = seance.bloquer(placesDemandees, id, maintenant);
+        Commande commande = Commande.creer(id, demande.seance(), billets, jusqua);
+
+        seances.enregistrer(seance);
+        commandes.enregistrer(commande);
+
+        var adresse = paiements.demanderPaiement(id, commande.total());
+        return new Reservation(id, commande.total(), adresse, jusqua);
     }
 }
