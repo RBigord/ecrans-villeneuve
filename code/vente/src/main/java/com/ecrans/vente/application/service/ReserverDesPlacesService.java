@@ -18,7 +18,6 @@ import com.ecrans.vente.domaine.commun.PlaceId;
 import com.ecrans.vente.domaine.seance.Seance;
 
 import java.time.Clock;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
