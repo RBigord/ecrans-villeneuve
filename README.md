@@ -2,15 +2,15 @@
 
 Projet final du module **Concevoir une application numérique** (B3).
 
-**Dépôt de l'équipe** : _collez ici le lien GitHub ou GitLab_
+**Dépôt de l'équipe** : [_ecrans-villeneuve_](https://github.com/RBigord/ecrans-villeneuve.git)
 
 ## Équipe
 
 | Membre | Étapes codées pendant le TP | Sections du DAT dont il ou elle est référent·e | Partie présentée à l'oral |
 |---|---|---|---|
-| Prénom Nom | … | … | … |
-| Prénom Nom | … | … | … |
-| Prénom Nom (si vous êtes trois) | … | … | … |
+| Raphaël Bigord (`RBigord`) | Phase 1 : Event Storming, glossaire, bounded contexts, grille de décision, création du dépôt (pas d'étape de code) | 1, 2, 3, 4, 5, 9, 11 | Le problème et le domaine (context map, core domain, grille) |
+| Mathis Valentin (`mathisv78510-hue`) | Phase 2 : étapes 1 à 5 (`Seance`, `Commande`, les trois services) et étape 6 (dépendance cachée corrigée) | 8, 10 | Le parcours « réserver et payer » et la décision 3 (concurrence) |
+| Loulia Tsui (`loulia`) | Phase 3 : diagrammes de composants et de séquence ; étapes 7 et 8 (Spring Boot, ventes partenaires SortiesFlash) | 6, 7 | L'hexagone, les adapters Spring, l'ACL et une hypothèse |
 
 ## Organisation du dépôt
 
@@ -45,9 +45,9 @@ ecrans-villeneuve/
 
 ## Jalons
 
-- [ ] **J4, fin de la phase 1** : glossaire, context map v0 et grille dans le DAT, poussés
-- [ ] **J4, fin de la phase 2** : tests verts pour les étapes 1 à 5, recherches de l'étape 6 sans résultat
-- [ ] **J4, fin de la phase 3** : `3-composants-vente` terminé, `4-sequence-reserver-payer` commencé
-- [ ] **Avant le J5** : étapes 7 et 8 faites (Spring Boot, ventes partenaires ; `ApiVenteTest` et `VentePartenaireApiTest` verts, Swagger répond), séquence terminée, DAT rédigé, composants mis à jour
-- [ ] **J5, finalisation** : dernières retouches, DAT exporté en PDF dans `docs/`, version taguée `v1.0` et poussée
-- [ ] **Rendu sur Moodle** avant les passages : le lien de ce dépôt (tag `v1.0` poussé, DAT en PDF dans `docs/`)
+- [x] **J4, fin de la phase 1** : glossaire, context map v0 et grille dans le DAT, poussés
+- [x] **J4, fin de la phase 2** : tests verts pour les étapes 1 à 5, recherches de l'étape 6 sans résultat
+- [x] **J4, fin de la phase 3** : `3-composants-vente` terminé, `4-sequence-reserver-payer` commencé
+- [x] **Avant le J5** : étapes 7 et 8 faites (Spring Boot, ventes partenaires ; `ApiVenteTest` et `VentePartenaireApiTest` verts, Swagger répond), séquence terminée, DAT rédigé, composants mis à jour
+- [x] **J5, finalisation** : dernières retouches, DAT exporté en PDF dans `docs/`, version taguée `v1.0` et poussée
+- [x] **Rendu sur Moodle** avant les passages : le lien de ce dépôt (tag `v1.0` poussé, DAT en PDF dans `docs/`)
